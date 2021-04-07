@@ -41,11 +41,14 @@ namespace ariel
             {
                 if (brd[row][x].empty())
                 {
-                    result += "_";
+                    brd[row][x] += "_";
+                    result+="_";
                 }
                 else
                 {
+
                     result += brd[row][x];
+
                 }
             }
         }
@@ -58,6 +61,7 @@ namespace ariel
 
                     if (brd[x][column].empty())
                     {
+                        brd[x][column] += "_";
                         result += "_";
                     }
                     else
@@ -78,6 +82,7 @@ namespace ariel
         {
             for (itr = it->second.begin(); itr != it->second.end(); itr++)
             {
+
                 cout << itr->second;
             }
             cout << "\n";
